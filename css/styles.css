@@ -565,6 +565,42 @@ h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); }
 }
 .menu-split--active .mood-tag { display: block; }
 
+/* --- Beverages Page --- */
+.beverages-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .beverages-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+}
+
+.beverages-column__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
+  color: var(--color-accent);
+  margin-bottom: 4px;
+}
+
+.beverages-column__subtitle {
+  color: var(--color-text-muted);
+  font-size: .9rem;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.beverages-note {
+  color: var(--color-text-muted);
+  font-size: .8rem;
+  font-style: italic;
+  margin-top: 16px;
+  text-align: center;
+}
+
 /* --- Events Page --- */
 .event-month {
   margin-bottom: 40px;

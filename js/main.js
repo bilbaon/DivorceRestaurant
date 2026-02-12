@@ -240,8 +240,8 @@
   // ─── Active Nav Highlighting ──────────────────────
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.site-nav__link').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+    const href = link.getAttribute('href').split('#')[0];
+    if (href === currentPage || (currentPage === '' && href === 'index.html') || (href === '' && currentPage === 'index.html')) {
       link.setAttribute('aria-current', 'page');
     }
   });

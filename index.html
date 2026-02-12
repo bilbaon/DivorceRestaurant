@@ -22,7 +22,8 @@
       </button>
       <ul id="nav-menu" class="site-nav__menu" data-open="false" role="list">
         <li><a href="index.html" class="site-nav__link" aria-current="page">Home</a></li>
-        <li><a href="menu.html" class="site-nav__link">Menu</a></li>
+        <li><a href="#menu" class="site-nav__link">Menu</a></li>
+        <li><a href="beverages.html" class="site-nav__link">Beverages</a></li>
         <li><a href="events.html" class="site-nav__link">Events</a></li>
         <li><a href="gallery.html" class="site-nav__link">Gallery</a></li>
         <li class="site-nav__order"><a href="#" class="btn btn--primary btn--sm" data-order-btn>Order Online</a></li>
@@ -39,7 +40,7 @@
         Fine dining through the five stages of grief. Every dish tells a story of love lost, freedom found, and checks that are always&nbsp;separate.
       </p>
       <div class="btn-group hero__buttons">
-        <a href="menu.html" class="btn btn--primary">View Menu</a>
+        <a href="#menu" class="btn btn--primary">View Menu</a>
         <a href="events.html" class="btn btn--outline">See Events</a>
       </div>
     </div>
@@ -79,38 +80,434 @@
       </div>
     </section>
 
-    <!-- Featured Menu Teaser -->
-    <section class="section" aria-labelledby="menu-teaser-heading">
+    <!-- Full Menu -->
+    <section id="menu" class="section" aria-labelledby="menu-heading">
       <div class="container">
         <div class="text-center">
-          <h2 id="menu-teaser-heading">From the Kitchen</h2>
-          <p class="section-subtitle">A taste of what awaits</p>
-        </div>
-        <div class="grid grid--3" style="margin-top:28px;">
-          <div class="card animate-in">
-            <h3 style="color:var(--color-accent); font-size:1.1rem;">The Midlife Crisis Steak</h3>
-            <p style="color:var(--color-text-muted); margin-top:8px; font-size:.95rem;">
-              Expensive, flashy, and slightly overcompensating. Comes with a side of existential dread and truffle fries.
-            </p>
-            <p style="color:var(--color-gold); margin-top:12px; font-weight:700;">$42</p>
-          </div>
-          <div class="card animate-in">
-            <h3 style="color:var(--color-accent); font-size:1.1rem;">Gaslight Garlic Bread</h3>
-            <p style="color:var(--color-text-muted); margin-top:8px; font-size:.95rem;">
-              It was always toasted like this. You're remembering wrong. Served with gaslamp butter.
-            </p>
-            <p style="color:var(--color-gold); margin-top:12px; font-weight:700;">$11</p>
-          </div>
-          <div class="card animate-in">
-            <h3 style="color:var(--color-accent); font-size:1.1rem;">The Divorcee Martini</h3>
-            <p style="color:var(--color-text-muted); margin-top:8px; font-size:.95rem;">
-              Extra dry. Like the conversation at your last anniversary dinner.
-            </p>
-            <p style="color:var(--color-gold); margin-top:12px; font-weight:700;">$16</p>
+          <h2 id="menu-heading">The Menu</h2>
+          <p class="section-subtitle">Every dish tells a story. Mostly sad ones.</p>
+
+          <!-- Separate Checks Toggle -->
+          <div class="separate-checks-bar" style="margin-top:28px;">
+            <label for="separate-checks" style="font-weight:600; cursor:pointer;">
+              Separate Checks
+            </label>
+            <div class="toggle-switch">
+              <input type="checkbox" id="separate-checks" aria-label="Toggle separate checks view">
+              <span class="toggle-switch__slider" aria-hidden="true"></span>
+            </div>
+            <span style="color:var(--color-text-muted); font-size:.85rem;">(Because of course.)</span>
           </div>
         </div>
+
+        <div class="menu-split">
+
+          <!-- Column A (main / left) -->
+          <div>
+            <div class="split-label">Your Side</div>
+
+            <div class="menu-sections">
+
+              <div class="menu-section">
+                <h3 class="menu-section__title">&#127866; Starters &mdash; Things Fell Apart</h3>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">The Silent Treatment Soup</p>
+                    <p class="menu-item__desc">Served cold. No seasoning. No explanation.</p>
+                    <p class="mood-tag">Today's mood: Resentful</p>
+                  </div>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Separate App-etizers Platter</p>
+                    <p class="menu-item__desc">Half nachos, half salad. No sharing allowed.</p>
+                    <p class="mood-tag">Today's mood: Territorial</p>
+                  </div>
+                  <span class="menu-item__price">$16</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Gaslight Garlic Bread</p>
+                    <p class="menu-item__desc">It was always toasted like this. You're remembering wrong.</p>
+                    <p class="mood-tag">Today's mood: Manipulative</p>
+                  </div>
+                  <span class="menu-item__price">$11</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Irreconcilable Bruschetta</p>
+                    <p class="menu-item__desc">Tomatoes and basil refuse to mix.</p>
+                    <p class="mood-tag">Today's mood: Stubborn</p>
+                  </div>
+                  <span class="menu-item__price">$13</span>
+                </div>
+              </div>
+
+              <div class="menu-section">
+                <h3 class="menu-section__title">&#129367; Salads &mdash; Fresh Starts</h3>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Single &amp; Ready to Mingle Greens</p>
+                    <p class="menu-item__desc">Bright citrus dressing and zero baggage.</p>
+                    <p class="mood-tag">Today's mood: Optimistic</p>
+                  </div>
+                  <span class="menu-item__price">$14</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">It's Not You, It's Blue Cheese</p>
+                    <p class="menu-item__desc">Tangy crumble with passive-aggressive vinaigrette.</p>
+                    <p class="mood-tag">Today's mood: Deflecting</p>
+                  </div>
+                  <span class="menu-item__price">$15</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Restraining Order Caesar</p>
+                    <p class="menu-item__desc">Croutons served on the other side of the bowl.</p>
+                    <p class="mood-tag">Today's mood: Cautious</p>
+                  </div>
+                  <span class="menu-item__price">$14</span>
+                </div>
+              </div>
+
+              <div class="menu-section">
+                <h3 class="menu-section__title">&#127828; Mains &mdash; The Split Decision</h3>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Half-and-Half Burger</p>
+                    <p class="menu-item__desc">One side gourmet wagyu, the other fast-food mystery meat. Custody battle included.</p>
+                    <p class="mood-tag">Today's mood: Conflicted</p>
+                  </div>
+                  <span class="menu-item__price">$22</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">The Freedom Fries Platter</p>
+                    <p class="menu-item__desc">Comes with a tiny celebratory flag.</p>
+                    <p class="mood-tag">Today's mood: Liberated</p>
+                  </div>
+                  <span class="menu-item__price">$15</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">The Midlife Crisis Steak</p>
+                    <p class="menu-item__desc">Expensive, flashy, and slightly overcompensating.</p>
+                    <p class="mood-tag">Today's mood: Reckless</p>
+                  </div>
+                  <span class="menu-item__price">$42</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Chicken Divorziato</p>
+                    <p class="menu-item__desc">Served with a dramatic reduction sauce and a lawyer's garnish.</p>
+                    <p class="mood-tag">Today's mood: Dramatic</p>
+                  </div>
+                  <span class="menu-item__price">$28</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Alimony Alfredo</p>
+                    <p class="menu-item__desc">Rich, creamy, and you'll be paying for it forever.</p>
+                    <p class="mood-tag">Today's mood: Expensive</p>
+                  </div>
+                  <span class="menu-item__price">$26</span>
+                </div>
+              </div>
+
+              <div class="menu-section">
+                <h3 class="menu-section__title">&#127837; Chef's Specials &mdash; Legal Proceedings</h3>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Court-Ordered Casserole</p>
+                    <p class="menu-item__desc">You didn't want it, but here it is.</p>
+                    <p class="mood-tag">Today's mood: Resigned</p>
+                  </div>
+                  <span class="menu-item__price">$24</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Settlement Sushi Rolls</p>
+                    <p class="menu-item__desc">Everyone compromises; nobody's satisfied.</p>
+                    <p class="mood-tag">Today's mood: Compromising</p>
+                  </div>
+                  <span class="menu-item__price">$28</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Prenup Penne</p>
+                    <p class="menu-item__desc">Looks simple, secretly complicated.</p>
+                    <p class="mood-tag">Today's mood: Anxious</p>
+                  </div>
+                  <span class="menu-item__price">$21</span>
+                </div>
+              </div>
+
+              <div class="menu-section">
+                <h3 class="menu-section__title">&#127856; Desserts &mdash; Sweet Revenge</h3>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Custody Battle Brownie</p>
+                    <p class="menu-item__desc">Split right down the middle.</p>
+                    <p class="mood-tag">Today's mood: Divided</p>
+                  </div>
+                  <span class="menu-item__price">$10</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Rebound Cheesecake</p>
+                    <p class="menu-item__desc">Delicious but suspiciously fast.</p>
+                    <p class="mood-tag">Today's mood: Impulsive</p>
+                  </div>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Cold Shoulder Ice Cream</p>
+                    <p class="menu-item__desc">Served with two spoons&hellip; for one.</p>
+                    <p class="mood-tag">Today's mood: Petty</p>
+                  </div>
+                  <span class="menu-item__price">$9</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Freedom Flan</p>
+                    <p class="menu-item__desc">Light, jiggly, and finally independent.</p>
+                    <p class="mood-tag">Today's mood: Liberated</p>
+                  </div>
+                  <span class="menu-item__price">$11</span>
+                </div>
+              </div>
+
+              <div class="menu-section">
+                <h3 class="menu-section__title">&#128104;&zwj;&#9878;&zwj; Kids Menu &mdash; Joint Custody Combos</h3>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Weekend Nuggets</p>
+                    <p class="menu-item__desc">Only available every other Saturday.</p>
+                    <p class="mood-tag">Today's mood: Part-time</p>
+                  </div>
+                  <span class="menu-item__price">$8</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Split Decision Mac &amp; Cheese</p>
+                    <p class="menu-item__desc">Half cheddar, half something else.</p>
+                    <p class="mood-tag">Today's mood: Indecisive</p>
+                  </div>
+                  <span class="menu-item__price">$9</span>
+                </div>
+              </div>
+
+            </div><!-- /.menu-sections -->
+          </div>
+
+          <!-- Column B (Separate Checks duplicate) -->
+          <div class="menu-split__column">
+            <div class="split-label">Their Side</div>
+
+            <div class="menu-sections">
+
+              <div class="menu-section">
+                <h3 class="menu-section__title">&#127866; Starters &mdash; Things Fell Apart</h3>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">The Silent Treatment Soup</p>
+                    <p class="menu-item__desc">Served cold. No seasoning. No explanation.</p>
+                    <p class="mood-tag">Today's mood: Unbothered</p>
+                  </div>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Separate App-etizers Platter</p>
+                    <p class="menu-item__desc">Half nachos, half salad. No sharing allowed.</p>
+                    <p class="mood-tag">Today's mood: Hostile</p>
+                  </div>
+                  <span class="menu-item__price">$16</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Gaslight Garlic Bread</p>
+                    <p class="menu-item__desc">It was always toasted like this. You're remembering wrong.</p>
+                    <p class="mood-tag">Today's mood: Gaslighting</p>
+                  </div>
+                  <span class="menu-item__price">$11</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Irreconcilable Bruschetta</p>
+                    <p class="menu-item__desc">Tomatoes and basil refuse to mix.</p>
+                    <p class="mood-tag">Today's mood: Defiant</p>
+                  </div>
+                  <span class="menu-item__price">$13</span>
+                </div>
+              </div>
+
+              <div class="menu-section">
+                <h3 class="menu-section__title">&#129367; Salads &mdash; Fresh Starts</h3>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Single &amp; Ready to Mingle Greens</p>
+                    <p class="menu-item__desc">Bright citrus dressing and zero baggage.</p>
+                    <p class="mood-tag">Today's mood: Desperate</p>
+                  </div>
+                  <span class="menu-item__price">$14</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">It's Not You, It's Blue Cheese</p>
+                    <p class="menu-item__desc">Tangy crumble with passive-aggressive vinaigrette.</p>
+                    <p class="mood-tag">Today's mood: Denial</p>
+                  </div>
+                  <span class="menu-item__price">$15</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Restraining Order Caesar</p>
+                    <p class="menu-item__desc">Croutons served on the other side of the bowl.</p>
+                    <p class="mood-tag">Today's mood: Legally required</p>
+                  </div>
+                  <span class="menu-item__price">$14</span>
+                </div>
+              </div>
+
+              <div class="menu-section">
+                <h3 class="menu-section__title">&#127828; Mains &mdash; The Split Decision</h3>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Half-and-Half Burger</p>
+                    <p class="menu-item__desc">One side gourmet wagyu, the other fast-food mystery meat. Custody battle included.</p>
+                    <p class="mood-tag">Today's mood: Petty</p>
+                  </div>
+                  <span class="menu-item__price">$22</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">The Freedom Fries Platter</p>
+                    <p class="menu-item__desc">Comes with a tiny celebratory flag.</p>
+                    <p class="mood-tag">Today's mood: Victorious</p>
+                  </div>
+                  <span class="menu-item__price">$15</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">The Midlife Crisis Steak</p>
+                    <p class="menu-item__desc">Expensive, flashy, and slightly overcompensating.</p>
+                    <p class="mood-tag">Today's mood: Impulsive</p>
+                  </div>
+                  <span class="menu-item__price">$42</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Chicken Divorziato</p>
+                    <p class="menu-item__desc">Served with a dramatic reduction sauce and a lawyer's garnish.</p>
+                    <p class="mood-tag">Today's mood: Theatrical</p>
+                  </div>
+                  <span class="menu-item__price">$28</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Alimony Alfredo</p>
+                    <p class="menu-item__desc">Rich, creamy, and you'll be paying for it forever.</p>
+                    <p class="mood-tag">Today's mood: Bitter</p>
+                  </div>
+                  <span class="menu-item__price">$26</span>
+                </div>
+              </div>
+
+              <div class="menu-section">
+                <h3 class="menu-section__title">&#127837; Chef's Specials &mdash; Legal Proceedings</h3>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Court-Ordered Casserole</p>
+                    <p class="menu-item__desc">You didn't want it, but here it is.</p>
+                    <p class="mood-tag">Today's mood: Compliant</p>
+                  </div>
+                  <span class="menu-item__price">$24</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Settlement Sushi Rolls</p>
+                    <p class="menu-item__desc">Everyone compromises; nobody's satisfied.</p>
+                    <p class="mood-tag">Today's mood: Resentful</p>
+                  </div>
+                  <span class="menu-item__price">$28</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Prenup Penne</p>
+                    <p class="menu-item__desc">Looks simple, secretly complicated.</p>
+                    <p class="mood-tag">Today's mood: Suspicious</p>
+                  </div>
+                  <span class="menu-item__price">$21</span>
+                </div>
+              </div>
+
+              <div class="menu-section">
+                <h3 class="menu-section__title">&#127856; Desserts &mdash; Sweet Revenge</h3>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Custody Battle Brownie</p>
+                    <p class="menu-item__desc">Split right down the middle.</p>
+                    <p class="mood-tag">Today's mood: Unfair</p>
+                  </div>
+                  <span class="menu-item__price">$10</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Rebound Cheesecake</p>
+                    <p class="menu-item__desc">Delicious but suspiciously fast.</p>
+                    <p class="mood-tag">Today's mood: Suspicious</p>
+                  </div>
+                  <span class="menu-item__price">$12</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Cold Shoulder Ice Cream</p>
+                    <p class="menu-item__desc">Served with two spoons&hellip; for one.</p>
+                    <p class="mood-tag">Today's mood: Vindictive</p>
+                  </div>
+                  <span class="menu-item__price">$9</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Freedom Flan</p>
+                    <p class="menu-item__desc">Light, jiggly, and finally independent.</p>
+                    <p class="mood-tag">Today's mood: Smug</p>
+                  </div>
+                  <span class="menu-item__price">$11</span>
+                </div>
+              </div>
+
+              <div class="menu-section">
+                <h3 class="menu-section__title">&#128104;&zwj;&#9878;&zwj; Kids Menu &mdash; Joint Custody Combos</h3>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Weekend Nuggets</p>
+                    <p class="menu-item__desc">Only available every other Saturday.</p>
+                    <p class="mood-tag">Today's mood: Disappointed</p>
+                  </div>
+                  <span class="menu-item__price">$8</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <p class="menu-item__name">Split Decision Mac &amp; Cheese</p>
+                    <p class="menu-item__desc">Half cheddar, half something else.</p>
+                    <p class="mood-tag">Today's mood: Confused</p>
+                  </div>
+                  <span class="menu-item__price">$9</span>
+                </div>
+              </div>
+
+            </div><!-- /.menu-sections -->
+          </div>
+
+        </div><!-- /.menu-split -->
+
         <div class="text-center" style="margin-top:28px;">
-          <a href="menu.html" class="btn btn--outline">See Full Menu</a>
+          <a href="beverages.html" class="btn btn--outline">See Beverages Menu</a>
         </div>
       </div>
     </section>
