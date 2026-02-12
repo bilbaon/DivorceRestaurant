@@ -419,47 +419,21 @@ h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); }
 }
 
 /* --- Menu Page --- */
-.accordion { margin-top: 24px; }
-
-.accordion__item {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  margin-bottom: 12px;
-  overflow: hidden;
+.menu-sections {
+  margin-top: 24px;
 }
 
-.accordion__header {
-  width: 100%;
-  background: var(--color-surface);
-  border: none;
-  color: var(--color-text);
+.menu-section {
+  margin-bottom: 36px;
+}
+
+.menu-section__title {
   font-family: var(--font-heading);
-  font-size: 1.15rem;
-  padding: 18px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: background var(--transition);
-}
-.accordion__header:hover { background: var(--color-surface-hover); }
-
-.accordion__icon {
-  font-size: 1.3rem;
-  transition: transform var(--transition);
+  font-size: 1.25rem;
   color: var(--color-accent);
-}
-.accordion__header[aria-expanded="true"] .accordion__icon {
-  transform: rotate(180deg);
-}
-
-.accordion__body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .35s ease;
-}
-.accordion__body__inner {
-  padding: 0 24px 20px;
+  padding-bottom: 10px;
+  margin-bottom: 4px;
+  border-bottom: 2px solid var(--color-border);
 }
 
 .menu-item {

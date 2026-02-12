@@ -118,30 +118,6 @@
     });
   }
 
-  // ─── Accordions ───────────────────────────────────
-  document.querySelectorAll('.accordion__header').forEach(header => {
-    header.addEventListener('click', () => {
-      const isExpanded = header.getAttribute('aria-expanded') === 'true';
-      const body = document.getElementById(header.getAttribute('aria-controls'));
-
-      // Collapse all siblings in same accordion
-      const accordion = header.closest('.accordion');
-      if (accordion) {
-        accordion.querySelectorAll('.accordion__header').forEach(h => {
-          h.setAttribute('aria-expanded', 'false');
-          const b = document.getElementById(h.getAttribute('aria-controls'));
-          if (b) b.style.maxHeight = null;
-        });
-      }
-
-      // Toggle clicked
-      if (!isExpanded) {
-        header.setAttribute('aria-expanded', 'true');
-        if (body) body.style.maxHeight = body.scrollHeight + 'px';
-      }
-    });
-  });
-
   // ─── Separate Checks Toggle (Menu page) ───────────
   const separateChecksToggle = document.getElementById('separate-checks');
   const menuSplit = document.querySelector('.menu-split');
