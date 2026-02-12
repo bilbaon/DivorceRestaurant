@@ -22,11 +22,10 @@
       </button>
       <ul id="nav-menu" class="site-nav__menu" data-open="false" role="list">
         <li><a href="index.html" class="site-nav__link">Home</a></li>
-        <li><a href="index.html#menu" class="site-nav__link">Menu</a></li>
         <li><a href="beverages.html" class="site-nav__link">Beverages</a></li>
         <li><a href="events.html" class="site-nav__link">Events</a></li>
         <li><a href="gallery.html" class="site-nav__link">Gallery</a></li>
-        <li class="site-nav__order"><a href="#" class="btn btn--primary btn--sm" data-order-btn>Order Online</a></li>
+        <li class="site-nav__order"><button class="btn btn--primary btn--sm" data-reservation-btn>Make a Reservation</button></li>
       </ul>
     </div>
   </nav>
@@ -309,6 +308,65 @@
       <h2 id="order-modal-title">Online Ordering</h2>
       <p>Online ordering is currently <strong>under litigation</strong>. Our lawyers and our delivery drivers are working through some things.</p>
       <button class="btn btn--primary" style="margin-top:12px;" onclick="document.getElementById('order-modal').setAttribute('data-open','false');document.body.style.overflow='';">Understood</button>
+    </div>
+  </div>
+
+  <!-- ─── Reservation Modal ───────────────────── -->
+  <div class="modal-overlay" id="reservation-modal" data-open="false" role="dialog" aria-modal="true" aria-labelledby="res-modal-title">
+    <div class="modal" style="text-align:left;">
+      <button class="modal__close" aria-label="Close modal">&times;</button>
+      <h2 id="res-modal-title" style="text-align:center;">Make a Reservation</h2>
+      <p style="text-align:center; margin-bottom:20px;">Tables for one are our specialty.</p>
+      <form id="reservation-form" class="reservation-form" novalidate>
+        <div class="form-group">
+          <label for="res-name">Name</label>
+          <input type="text" id="res-name" required placeholder="Your name (not your ex's)">
+          <p class="form-error">Please enter your name.</p>
+        </div>
+        <div class="form-group">
+          <label for="res-email">Email</label>
+          <input type="email" id="res-email" required placeholder="you@freedom.com">
+          <p class="form-error">Please enter a valid email.</p>
+        </div>
+        <div class="form-group">
+          <label for="res-date">Date</label>
+          <input type="date" id="res-date" required>
+          <p class="form-error">Please select a date.</p>
+        </div>
+        <div class="form-group">
+          <label for="res-guests">Party Size</label>
+          <select id="res-guests" required>
+            <option value="">Select...</option>
+            <option value="1">1 (Recommended)</option>
+            <option value="2">2 (We won't judge)</option>
+            <option value="3-4">3-4</option>
+            <option value="5+">5+ (Support group?)</option>
+          </select>
+          <p class="form-error">Please select a party size.</p>
+        </div>
+        <div class="form-group">
+          <label for="res-occasion">Occasion</label>
+          <select id="res-occasion">
+            <option value="">Prefer not to say</option>
+            <option value="finalization">Finalization Celebration</option>
+            <option value="healing">Healing Dinner</option>
+            <option value="rebound">Rebound Date</option>
+            <option value="custody">Post-Custody Hearing</option>
+            <option value="birthday">Birthday (Solo)</option>
+            <option value="other">Other (It's complicated)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center; margin-top:8px;">Submit Reservation</button>
+      </form>
+      <div class="reservation-success">
+        <div style="text-align:center;">
+          <div class="modal__icon" aria-hidden="true">&#9878;</div>
+          <h3>Reservation Pending Arbitration</h3>
+          <p style="margin-top:12px;">Your reservation has been submitted and is currently <strong>pending arbitration</strong>. A mediator (host) will contact you within 24&ndash;48 business hours to finalize seating arrangements.</p>
+          <p style="font-size:.85rem; color:var(--color-text-muted); margin-top:8px;">Confirmation number: DIV-2025-&#8203;4829</p>
+          <button class="btn btn--primary" style="margin-top:16px;" onclick="document.getElementById('reservation-modal').setAttribute('data-open','false');document.body.style.overflow='';">Close</button>
+        </div>
+      </div>
     </div>
   </div>
 
