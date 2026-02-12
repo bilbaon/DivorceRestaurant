@@ -292,12 +292,12 @@ h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); }
 
 /* --- Hero --- */
 .hero {
-  min-height: calc(85vh - var(--nav-height));
+  min-height: calc(51vh - var(--nav-height));
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 60px 20px;
+  padding: 36px 20px;
   position: relative;
   background:
     radial-gradient(ellipse at 30% 20%, var(--color-accent-glow) 0%, transparent 50%),
