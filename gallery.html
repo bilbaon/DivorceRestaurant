@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Irreconcilable Bites</title>
+  <meta name="description" content="Take a tour of Irreconcilable Bites through our photo gallery. Dining room, bar, events, and details.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ─── Navigation ──────────────────────────── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container site-nav__inner">
+      <a href="index.html" class="site-nav__logo" aria-label="Irreconcilable Bites Home">
+        Irreconcilable<span>Bites</span>
+      </a>
+      <button class="site-nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu" class="site-nav__menu" data-open="false" role="list">
+        <li><a href="index.html" class="site-nav__link">Home</a></li>
+        <li><a href="menu.html" class="site-nav__link">Menu</a></li>
+        <li><a href="events.html" class="site-nav__link">Events</a></li>
+        <li><a href="gallery.html" class="site-nav__link">Gallery</a></li>
+        <li class="site-nav__order"><a href="#" class="btn btn--primary btn--sm" data-order-btn>Order Online</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- Page Header -->
+    <section class="section text-center">
+      <div class="container">
+        <h1>Gallery</h1>
+        <p class="section-subtitle">A visual tour of heartbreak and haute cuisine.</p>
+      </div>
+    </section>
+
+    <!-- Filters + Grid -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+
+        <!-- Filters -->
+        <div class="gallery-filters" role="group" aria-label="Filter gallery by category">
+          <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="dining" aria-pressed="false">Dining Room</button>
+          <button class="filter-btn" data-filter="bar" aria-pressed="false">Bar</button>
+          <button class="filter-btn" data-filter="events" aria-pressed="false">Events</button>
+          <button class="filter-btn" data-filter="details" aria-pressed="false">Details</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+
+          <!-- 1: Dining Room -->
+          <div class="gallery-item" data-category="dining" data-caption="The Split House Main Room — Table for one is our specialty." tabindex="0" role="button" aria-label="View: The Split House Main Room">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="300" fill="#2e2028"/>
+              <rect x="40" y="180" width="320" height="8" rx="4" fill="#4a3040"/>
+              <rect x="80" y="120" width="24" height="68" rx="4" fill="#3a2a33"/>
+              <rect x="296" y="120" width="24" height="68" rx="4" fill="#3a2a33"/>
+              <circle cx="200" cy="160" r="20" fill="#c8385e" opacity=".6"/>
+              <circle cx="200" cy="160" r="8" fill="#d4a855" opacity=".8"/>
+              <text x="200" y="250" text-anchor="middle" fill="#a8929c" font-size="14" font-family="Georgia, serif">Dining Room</text>
+            </svg>
+            <div class="gallery-item__overlay">The Split House Main Room</div>
+          </div>
+
+          <!-- 2: Bar -->
+          <div class="gallery-item" data-category="bar" data-caption="The Liquid Closure Bar — Where closure comes in a glass." tabindex="0" role="button" aria-label="View: The Liquid Closure Bar">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="300" fill="#241920"/>
+              <rect x="20" y="200" width="360" height="12" rx="6" fill="#4a3040"/>
+              <rect x="60" y="140" width="30" height="60" rx="2" fill="#c8385e" opacity=".5"/>
+              <rect x="120" y="150" width="30" height="50" rx="2" fill="#d4a855" opacity=".5"/>
+              <rect x="180" y="130" width="30" height="70" rx="2" fill="#c8385e" opacity=".3"/>
+              <rect x="240" y="145" width="30" height="55" rx="2" fill="#d4a855" opacity=".4"/>
+              <rect x="300" y="155" width="30" height="45" rx="2" fill="#c8385e" opacity=".6"/>
+              <text x="200" y="250" text-anchor="middle" fill="#a8929c" font-size="14" font-family="Georgia, serif">Bar</text>
+            </svg>
+            <div class="gallery-item__overlay">The Liquid Closure Bar</div>
+          </div>
+
+          <!-- 3: Events -->
+          <div class="gallery-item" data-category="events" data-caption="Anti-Valentine's Night — Love is dead. Dessert is free." tabindex="0" role="button" aria-label="View: Anti-Valentine's Night">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="300" fill="#2e2028"/>
+              <path d="M200 100 L220 140 L260 140 L228 165 L240 205 L200 180 L160 205 L172 165 L140 140 L180 140 Z" fill="#c8385e" opacity=".4"/>
+              <line x1="180" y1="90" x2="220" y2="210" stroke="#d4a855" stroke-width="3" opacity=".6"/>
+              <text x="200" y="260" text-anchor="middle" fill="#a8929c" font-size="14" font-family="Georgia, serif">Anti-Valentine's</text>
+            </svg>
+            <div class="gallery-item__overlay">Anti-Valentine's Night</div>
+          </div>
+
+          <!-- 4: Details -->
+          <div class="gallery-item" data-category="details" data-caption="You've Been Served — Our signature check drop moment." tabindex="0" role="button" aria-label="View: You've Been Served Check Drop">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="300" fill="#1a1118"/>
+              <rect x="140" y="80" width="120" height="160" rx="8" fill="#2e2028" stroke="#4a3040" stroke-width="2"/>
+              <line x1="160" y1="110" x2="240" y2="110" stroke="#4a3040" stroke-width="1"/>
+              <line x1="160" y1="130" x2="240" y2="130" stroke="#4a3040" stroke-width="1"/>
+              <line x1="160" y1="150" x2="220" y2="150" stroke="#4a3040" stroke-width="1"/>
+              <line x1="160" y1="180" x2="240" y2="180" stroke="#c8385e" stroke-width="2"/>
+              <text x="200" y="205" text-anchor="middle" fill="#d4a855" font-size="16" font-weight="bold" font-family="Georgia, serif">$$$</text>
+              <text x="200" y="270" text-anchor="middle" fill="#a8929c" font-size="14" font-family="Georgia, serif">The Check</text>
+            </svg>
+            <div class="gallery-item__overlay">You've Been Served Check Drop</div>
+          </div>
+
+          <!-- 5: Dining Room -->
+          <div class="gallery-item" data-category="dining" data-caption="Separate Seating Arrangement — His side vs. Her side." tabindex="0" role="button" aria-label="View: Separate Seating Arrangement">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="300" fill="#2e2028"/>
+              <line x1="200" y1="40" x2="200" y2="260" stroke="#c8385e" stroke-width="2" stroke-dasharray="8,4"/>
+              <circle cx="120" cy="150" r="35" fill="#3a2a33" stroke="#4a3040"/>
+              <circle cx="280" cy="150" r="35" fill="#3a2a33" stroke="#4a3040"/>
+              <text x="120" y="155" text-anchor="middle" fill="#a8929c" font-size="11" font-family="sans-serif">HIS</text>
+              <text x="280" y="155" text-anchor="middle" fill="#a8929c" font-size="11" font-family="sans-serif">HERS</text>
+              <text x="200" y="280" text-anchor="middle" fill="#a8929c" font-size="14" font-family="Georgia, serif">Separate Seating</text>
+            </svg>
+            <div class="gallery-item__overlay">Separate Seating Arrangement</div>
+          </div>
+
+          <!-- 6: Bar -->
+          <div class="gallery-item" data-category="bar" data-caption="The Divorcee Martini — Extra dry, like your ex's sense of humor." tabindex="0" role="button" aria-label="View: The Divorcee Martini">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="300" fill="#1a1118"/>
+              <polygon points="160,100 240,100 210,180 190,180" fill="#2e2028" stroke="#d4a855" stroke-width="2"/>
+              <rect x="195" y="180" width="10" height="50" fill="#d4a855" opacity=".5"/>
+              <ellipse cx="200" cy="235" rx="35" ry="6" fill="#d4a855" opacity=".3"/>
+              <circle cx="185" cy="120" r="6" fill="#5cb85c" opacity=".6"/>
+              <text x="200" y="270" text-anchor="middle" fill="#a8929c" font-size="14" font-family="Georgia, serif">Martini Service</text>
+            </svg>
+            <div class="gallery-item__overlay">The Divorcee Martini</div>
+          </div>
+
+          <!-- 7: Events -->
+          <div class="gallery-item" data-category="events" data-caption="The Great Uncoupling Gala — Ring toss and champagne liberation." tabindex="0" role="button" aria-label="View: The Great Uncoupling Gala">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="300" fill="#241920"/>
+              <circle cx="200" cy="130" r="40" fill="none" stroke="#d4a855" stroke-width="4"/>
+              <circle cx="200" cy="130" r="28" fill="none" stroke="#d4a855" stroke-width="2" opacity=".5"/>
+              <rect x="150" y="190" width="100" height="10" rx="5" fill="#c8385e" opacity=".6"/>
+              <rect x="170" y="205" width="60" height="10" rx="5" fill="#c8385e" opacity=".4"/>
+              <text x="200" y="260" text-anchor="middle" fill="#a8929c" font-size="14" font-family="Georgia, serif">Uncoupling Gala</text>
+            </svg>
+            <div class="gallery-item__overlay">The Great Uncoupling Gala</div>
+          </div>
+
+          <!-- 8: Details -->
+          <div class="gallery-item" data-category="details" data-caption="Candlelit Ambiance — Romance is dead but the candles aren't." tabindex="0" role="button" aria-label="View: Candlelit Ambiance">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="300" fill="#1a1118"/>
+              <rect x="185" y="160" width="30" height="60" rx="2" fill="#d4a855" opacity=".4"/>
+              <ellipse cx="200" cy="145" rx="14" ry="20" fill="#c8385e" opacity=".6"/>
+              <ellipse cx="200" cy="140" rx="6" ry="12" fill="#d4a855" opacity=".8"/>
+              <circle cx="200" cy="130" r="20" fill="#d4a855" opacity=".1"/>
+              <circle cx="200" cy="130" r="40" fill="#d4a855" opacity=".05"/>
+              <text x="200" y="260" text-anchor="middle" fill="#a8929c" font-size="14" font-family="Georgia, serif">Candlelit Ambiance</text>
+            </svg>
+            <div class="gallery-item__overlay">Candlelit Ambiance</div>
+          </div>
+
+          <!-- 9: Dining Room -->
+          <div class="gallery-item" data-category="dining" data-caption="The Private Mediation Room — For parties who can't be at the same table." tabindex="0" role="button" aria-label="View: The Private Mediation Room">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="300" fill="#2e2028"/>
+              <rect x="60" y="60" width="280" height="180" rx="8" fill="#241920" stroke="#4a3040" stroke-width="2"/>
+              <rect x="100" y="120" width="80" height="60" rx="4" fill="#3a2a33"/>
+              <rect x="220" y="120" width="80" height="60" rx="4" fill="#3a2a33"/>
+              <line x1="200" y1="80" x2="200" y2="220" stroke="#c8385e" stroke-width="2"/>
+              <text x="200" y="270" text-anchor="middle" fill="#a8929c" font-size="14" font-family="Georgia, serif">Mediation Room</text>
+            </svg>
+            <div class="gallery-item__overlay">The Private Mediation Room</div>
+          </div>
+
+          <!-- 10: Events -->
+          <div class="gallery-item" data-category="events" data-caption="Breakup Anthem DJ Night — No love songs. No exceptions." tabindex="0" role="button" aria-label="View: Breakup Anthem DJ Night">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="300" fill="#241920"/>
+              <circle cx="200" cy="140" r="50" fill="#2e2028" stroke="#c8385e" stroke-width="3"/>
+              <circle cx="200" cy="140" r="20" fill="#2e2028" stroke="#c8385e" stroke-width="1"/>
+              <circle cx="200" cy="140" r="4" fill="#c8385e"/>
+              <rect x="130" y="210" width="20" height="40" rx="2" fill="#c8385e" opacity=".3"/>
+              <rect x="160" y="195" width="20" height="55" rx="2" fill="#c8385e" opacity=".5"/>
+              <rect x="190" y="200" width="20" height="50" rx="2" fill="#c8385e" opacity=".4"/>
+              <rect x="220" y="190" width="20" height="60" rx="2" fill="#c8385e" opacity=".6"/>
+              <rect x="250" y="205" width="20" height="45" rx="2" fill="#c8385e" opacity=".35"/>
+              <text x="200" y="280" text-anchor="middle" fill="#a8929c" font-size="14" font-family="Georgia, serif">DJ Night</text>
+            </svg>
+            <div class="gallery-item__overlay">Breakup Anthem DJ Night</div>
+          </div>
+
+          <!-- 11: Bar -->
+          <div class="gallery-item" data-category="bar" data-caption="Red Flag Sangria Station — You should have noticed earlier." tabindex="0" role="button" aria-label="View: Red Flag Sangria Station">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="300" fill="#2e2028"/>
+              <rect x="160" y="90" width="80" height="120" rx="6" fill="#c8385e" opacity=".2" stroke="#c8385e" stroke-width="2"/>
+              <ellipse cx="200" cy="90" rx="40" ry="8" fill="#c8385e" opacity=".3"/>
+              <circle cx="180" cy="140" r="6" fill="#c8385e" opacity=".5"/>
+              <circle cx="210" cy="160" r="5" fill="#d4a855" opacity=".5"/>
+              <circle cx="190" cy="175" r="4" fill="#c8385e" opacity=".4"/>
+              <polygon points="280,80 300,80 300,120 290,130 280,120" fill="#c8385e" opacity=".7"/>
+              <rect x="283" y="130" width="4" height="40" fill="#4a3040"/>
+              <text x="200" y="260" text-anchor="middle" fill="#a8929c" font-size="14" font-family="Georgia, serif">Sangria Station</text>
+            </svg>
+            <div class="gallery-item__overlay">Red Flag Sangria Station</div>
+          </div>
+
+          <!-- 12: Details -->
+          <div class="gallery-item" data-category="details" data-caption="The Broken Plate Wall — Every plate tells a story. A loud one." tabindex="0" role="button" aria-label="View: The Broken Plate Wall">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="300" fill="#1a1118"/>
+              <circle cx="120" cy="100" r="30" fill="none" stroke="#4a3040" stroke-width="2"/>
+              <line x1="100" y1="85" x2="140" y2="115" stroke="#c8385e" stroke-width="2"/>
+              <circle cx="280" cy="110" r="25" fill="none" stroke="#4a3040" stroke-width="2"/>
+              <line x1="260" y1="100" x2="300" y2="120" stroke="#c8385e" stroke-width="2"/>
+              <circle cx="200" cy="170" r="35" fill="none" stroke="#4a3040" stroke-width="2"/>
+              <line x1="175" y1="155" x2="225" y2="185" stroke="#c8385e" stroke-width="2"/>
+              <line x1="185" y1="185" x2="215" y2="155" stroke="#c8385e" stroke-width="1.5"/>
+              <circle cx="130" cy="210" r="20" fill="none" stroke="#4a3040" stroke-width="2"/>
+              <circle cx="280" cy="220" r="22" fill="none" stroke="#4a3040" stroke-width="2"/>
+              <text x="200" y="270" text-anchor="middle" fill="#a8929c" font-size="14" font-family="Georgia, serif">Broken Plate Wall</text>
+            </svg>
+            <div class="gallery-item__overlay">The Broken Plate Wall</div>
+          </div>
+
+        </div><!-- /.gallery-grid -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Lightbox ────────────────────────────── -->
+  <div class="lightbox" id="lightbox" data-open="false" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">&#8592;</button>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">&#8594;</button>
+    <div class="lightbox__content"></div>
+    <p class="lightbox__caption"></p>
+  </div>
+
+  <!-- ─── Footer ──────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Location</h4>
+          <p>
+            742 Splitsville Boulevard<br>
+            Suite D (for Divorce)<br>
+            Separaton, CA 90210
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p>
+            Mon&ndash;Thu: 5 PM &ndash; 11 PM<br>
+            Fri&ndash;Sat: 5 PM &ndash; 1 AM<br>
+            Sun: Closed (for healing)
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>
+            Phone: (555) 382-5968<br>
+            Email: info@irreconcilablebites.com
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter / X">X</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Irreconcilable Bites. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── Order Online Modal ──────────────────── -->
+  <div class="modal-overlay" id="order-modal" data-open="false" role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
+    <div class="modal">
+      <button class="modal__close" aria-label="Close modal">&times;</button>
+      <div class="modal__icon" aria-hidden="true">&#9878;</div>
+      <h2 id="order-modal-title">Online Ordering</h2>
+      <p>Online ordering is currently <strong>under litigation</strong>. Our lawyers and our delivery drivers are working through some things.</p>
+      <button class="btn btn--primary" style="margin-top:12px;" onclick="document.getElementById('order-modal').setAttribute('data-open','false');document.body.style.overflow='';">Understood</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
