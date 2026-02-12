@@ -1,30 +1,30 @@
 /* ===================================================
    Irreconcilable Bites — Global Stylesheet
-   Mobile-first, CSS custom properties, dark & classy
+   Mobile-first, CSS custom properties, elegant & refined
    =================================================== */
 
 /* --- CSS Variables / Theme --- */
 :root {
-  --color-bg: #1a1118;
-  --color-bg-alt: #241920;
-  --color-surface: #2e2028;
-  --color-surface-hover: #3a2a33;
-  --color-border: #4a3040;
-  --color-text: #f0e6eb;
-  --color-text-muted: #a8929c;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f6f7;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f2eff0;
+  --color-border: #e2dce0;
+  --color-text: #1a1118;
+  --color-text-muted: #6b5a62;
   --color-accent: #c8385e;
-  --color-accent-hover: #e0476f;
-  --color-accent-glow: rgba(200, 56, 94, 0.25);
-  --color-gold: #d4a855;
+  --color-accent-hover: #a82d4d;
+  --color-accent-glow: rgba(200, 56, 94, 0.08);
+  --color-gold: #96753a;
   --color-success: #5cb85c;
   --font-heading: 'Georgia', 'Times New Roman', serif;
   --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --max-width: 1140px;
   --nav-height: 64px;
-  --radius: 8px;
-  --radius-lg: 12px;
-  --shadow: 0 4px 24px rgba(0,0,0,.4);
-  --shadow-sm: 0 2px 8px rgba(0,0,0,.3);
+  --radius: 4px;
+  --radius-lg: 8px;
+  --shadow: 0 4px 24px rgba(0,0,0,.08);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.06);
   --transition: .25s ease;
 }
 
@@ -82,8 +82,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   line-height: 1.2;
   color: var(--color-text);
+  letter-spacing: .01em;
 }
-h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: .02em; }
 h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); }
 h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); }
 
@@ -171,7 +172,7 @@ h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); }
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(26, 17, 24, .92);
+  background: rgba(255, 255, 255, .92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
@@ -300,7 +301,7 @@ h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); }
   position: relative;
   background:
     radial-gradient(ellipse at 30% 20%, var(--color-accent-glow) 0%, transparent 50%),
-    radial-gradient(ellipse at 70% 80%, rgba(212, 168, 85, .08) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(150, 117, 58, .04) 0%, transparent 50%),
     var(--color-bg);
 }
 
@@ -341,7 +342,7 @@ h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); }
 }
 .card:hover {
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 1px var(--color-accent), var(--shadow);
+  box-shadow: 0 0 0 1px var(--color-accent), 0 8px 32px rgba(200, 56, 94, .08);
 }
 
 /* --- Grid Layouts --- */
@@ -504,6 +505,7 @@ h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); }
   background: #fff;
   border-radius: 50%;
   transition: transform var(--transition);
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
 }
 .toggle-switch input:checked + .toggle-switch__slider {
   background: var(--color-accent);
@@ -647,8 +649,8 @@ h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); }
 .annual-event {
   margin-top: 40px;
   padding: 32px;
-  background: linear-gradient(135deg, var(--color-surface), var(--color-bg-alt));
-  border: 2px solid var(--color-gold);
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   text-align: center;
 }
@@ -863,7 +865,7 @@ h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); }
   border-radius: 50%;
   transition: all var(--transition);
 }
-.modal__close:hover { color: var(--color-text); background: var(--color-surface-hover); }
+.modal__close:hover { color: var(--color-text); background: var(--color-bg-alt); }
 
 .modal__icon {
   font-size: 3rem;
@@ -897,7 +899,7 @@ h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); }
 .reservation-form select {
   width: 100%;
   padding: 10px 14px;
-  background: var(--color-bg);
+  background: var(--color-bg-alt);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   color: var(--color-text);
@@ -987,8 +989,8 @@ h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); }
 }
 .footer-social a:hover {
   border-color: var(--color-accent);
-  color: var(--color-accent);
-  background: var(--color-accent-glow);
+  color: #fff;
+  background: var(--color-accent);
 }
 
 .footer-bottom {
